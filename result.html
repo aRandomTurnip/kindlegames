@@ -7,22 +7,9 @@
     <h1>Guessing Game Result</h1>
     <p>
         <!-- Result message placeholder -->
-        <?php
-        if (isset($_GET['guess'])) {
-            $guess = $_GET['guess'];
-            $randomNumber = mt_rand(1, 10);
-
-            if ($guess == $randomNumber) {
-                echo "Congratulations! You guessed the correct number.";
-            } else {
-                echo "Sorry, the correct number was $randomNumber. Please try again.";
-            }
-        }
-        ?>
     </p>
-    
     <p>
-        <a href="index.html">Play Again</a>
+        <a href="game.html">Play Again</a>
     </p>
 </body>
 </html>
