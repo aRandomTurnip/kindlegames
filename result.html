@@ -6,6 +6,7 @@
 <body>
     <h1>Guessing Game Result</h1>
     <p>
+        <!-- Result message placeholder -->
         <?php
         if (isset($_GET['guess'])) {
             $guess = $_GET['guess'];
@@ -18,6 +19,10 @@
             }
         }
         ?>
+    </p>
+    
+    <p>
+        <a href="index.html">Play Again</a>
     </p>
 </body>
 </html>
